@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Botons a l'esquerra, al centre i a la dreta</title>
+<title>FlyLauncher</title>
 <style>
     body {
         display: flex;
@@ -18,24 +18,34 @@
         justify-content: center;
         width: 100%;
     }
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 </style>
 </head>
 <body>
 
 <div class="container">
-    <button onclick="alert('Has clicat a l'esquerra!')">Esquerra</button>
+    <a href="index.html" class="button">INICO1</a>
 </div>
 
 <div class="container">
-    <button onclick="alert('Has clicat al centre!')">Centre</button>
+    <a href="index.html" class="button">INICO2</a>
 </div>
 
 <div class="container">
-    <button onclick="alert('Has clicat a la dreta!')">Dreta</button>
+    <a href="index.html" class="button">INICO3</a>
 </div>
 
 </body>
